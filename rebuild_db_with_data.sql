@@ -21,7 +21,7 @@ CREATE TABLE public.showcases (
 	people1 int4 NULL,
 	people2 int4 NULL,
 	people3 int4 NULL,
-	people4 int4 NULL,create schema public;
+	people4 int4 NULL,
 	user_id int4 NOT NULL,
 	CONSTRAINT showcases_pkey PRIMARY KEY (showcase_id),
 	CONSTRAINT uk_t2kmw8wonvw26jgkgnpesyngp UNIQUE (user_id)
