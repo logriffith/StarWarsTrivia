@@ -135,3 +135,6 @@ public class LoginController {
 		
 	}
 }
+
+// yum install nc
+
