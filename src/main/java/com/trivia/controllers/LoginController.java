@@ -23,7 +23,7 @@ import com.trivia.services.UserService;
 
 @RestController
 @RequestMapping(value="/login")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 public class LoginController {
 	
 	private static final Logger log = LogManager.getLogger(LoginController.class); 
