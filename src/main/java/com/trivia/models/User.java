@@ -24,6 +24,8 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 @Table(name = "users")
 public class User {
 	
+	//JsonManagedReference and JsonBackReference will break a recursive infinite loop
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="user_id")

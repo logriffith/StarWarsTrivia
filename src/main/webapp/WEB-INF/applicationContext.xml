@@ -15,9 +15,9 @@
     http://www.springframework.org/schema/aop 
     http://www.springframework.org/schema/aop/spring-aop.xsd">
     
-    <aop:aspectj-autoproxy/>
+    <aop:aspectj-autoproxy/> <!-- Needed for Spring AOP -->
     <context:component-scan base-package="com.trivia"></context:component-scan>
-    <tx:annotation-driven/>
+    <tx:annotation-driven/> <!-- Needed for Spring ORM -->
 	<mvc:annotation-driven></mvc:annotation-driven>
 	
 	<bean name="ourDataSource"
