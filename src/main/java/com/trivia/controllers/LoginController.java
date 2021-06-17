@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.trivia.models.User;
@@ -23,7 +24,7 @@ import com.trivia.services.UserService;
 
 @RestController
 @RequestMapping(value="/login")
-@CrossOrigin(origins = "*", allowedHeaders="Access-Control-Allow-Origin: http://localhost:4200")
+@CrossOrigin(origins = "http://localhost:4200", allowedHeaders="Access-Control-Allow-Origin", exposedHeaders="Access-Control-Allow-Origin", methods={RequestMethod.GET,RequestMethod.POST,RequestMethod.PUT,RequestMethod.DELETE})
 public class LoginController {
 	
 	private static final Logger log = LogManager.getLogger(LoginController.class); 
