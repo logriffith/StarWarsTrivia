@@ -24,7 +24,7 @@ import com.trivia.services.UserService;
 
 @RestController
 @RequestMapping(value="/login")
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders="Access-Control-Allow-Origin", exposedHeaders="Access-Control-Allow-Origin", methods={RequestMethod.GET,RequestMethod.POST,RequestMethod.PUT,RequestMethod.DELETE})
+@CrossOrigin(origins = {"http://localhost:4200","ec2-13-58-63-20.us-east-2.compute.amazonaws.com"}, allowedHeaders="Access-Control-Allow-Origin", exposedHeaders="Access-Control-Allow-Origin", methods={RequestMethod.GET,RequestMethod.POST,RequestMethod.PUT,RequestMethod.DELETE})
 public class LoginController {
 	
 	private static final Logger log = LogManager.getLogger(LoginController.class); 
